@@ -1,0 +1,99 @@
+@charset "UTF-8"
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: blackman;
+    src: url(Deutsch.ttf) format(opentype);
+    font-weight: normal;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+:root{
+    --cor001: #DEDDB0;
+    --cor02: #B1AF76;
+    --cor03: #79783E;
+    --cor04: #869B94;
+    --cor05: black;
+
+    --font-blackman: blackman,Arial, Verdana;
+    --font-normal: 'Bebas Neue', sans-serif;
+
+}
+body{
+    background-color: var(--cor04);
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor001), var(--cor03));
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+    font-family: var(--font-blackman);
+    
+}
+header h1{
+    text-shadow:  3px 3px 3px rgba(0, 0, 0, 0.164);
+}
+header p{
+    color: var(--cor001);
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.233);
+}
+nav{
+    background-color: black;
+    padding: 20px;
+    background-color: var(--cor03)
+}
+nav a{
+    color: white;
+    padding: 20px;
+    font-family: var(--font-normal);
+    font-weight: bold;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: var(--cor001);
+    color: var(--cor04);
+}
+main{
+    background-color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    min-width: 300px;
+    max-width: 1000px ;
+    border-radius: 5px;
+}
+main  p{
+    font-family: var(--font-normal);
+    font-weight: bolder;
+    text-align: justify;
+}
+main h1{
+    font-family: var(--font-blackman);
+}
+main h2{
+    font-family: var(--font-blackman);
+}
+aside{
+    background-color: var(--cor02);
+    margin: auto;
+    margin: 10px;
+    padding: 30px;
+    border-radius: 10px;
+}
+aside h3{
+    font-family: var(--font-normal);
+}
+footer{
+    background-color: black;
+   
+}
+footer > p{
+    color: white;
+    font-family: var(--font-normal);
+    text-align: center;
+}
